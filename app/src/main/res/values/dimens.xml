@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="line_length">60dp</dimen>
+    <dimen name="line_width">5dp</dimen>
+    <dimen name="title_text">25sp</dimen>
+    <dimen name="subtitle_text">20sp</dimen>
+
+    <dimen name="name_top_margin">0dp</dimen>
+    <dimen name="name_bottom_margin">3dp</dimen>
+    <dimen name="name">13sp</dimen>
+    <dimen name="post">11sp</dimen>
+    <dimen name="photo">10sp</dimen>
+</resources>

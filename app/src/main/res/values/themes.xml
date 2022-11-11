@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ChemBuddy" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/lightBlue</item>
+        <item name="colorOnPrimary">@color/offWhite</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/bgBlack</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowContentTransitions">true</item>
+
+    </style>
+</resources>

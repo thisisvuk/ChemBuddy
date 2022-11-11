@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgBlack"
+    tools:context=".TeamFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="25dp">
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/line_width"
+                    android:layout_height="@dimen/line_length"
+                    android:layout_centerVertical="true"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/homeTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:text="Team\nChESA"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/homeTitle2"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:fontFamily="@font/bold"-->
+                    <!--                        android:text="events"-->
+                    <!--                        android:textColor="@color/white"-->
+                    <!--                        android:textSize="30sp" />-->
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/blue"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:fontFamily="@font/medium"
+                        android:text="2022"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/subtitle_text" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/bgBlack"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:fontFamily="@font/medium"
+                        android:text="2021"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/subtitle_text" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowOrderPreserved="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b1"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Ayush Kohade"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="President"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b2"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Parth Patle"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="Vice President"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b3"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Ridhima Gupta"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="Chief Advisor"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowOrderPreserved="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b4"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Komal Sharma"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="Chief Advisor"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b5"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Yash Nahata"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="Finance Head"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b6"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Nisarg Nimbalkar"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="Finance Head"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowOrderPreserved="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b7"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Jeni Mathew"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="Event Management"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b8"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Aarya Kulkarni"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="PR &amp; Outreach"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b9"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Aditi Raut"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="PR &amp; Outreach"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowOrderPreserved="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b10"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Rohan Bedke"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="Content &amp; SM Head"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b11"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Sanchay Joshi"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="Research Head"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b12"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Vaibhav Kakde"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="IIP Head"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowOrderPreserved="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b13"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Akshay Bhuran"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="IIP Head"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b14"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Kazma Shah"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="IIP Head"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b15"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Sania Dhage"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="Internship Head"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowOrderPreserved="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b16"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Aditya Oke"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="Database Head"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b17"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Aneesh Panse"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="Resource Management"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_margin="@dimen/photo"
+                        app:cardCornerRadius="40dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/b18"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/name_top_margin"
+                        android:layout_marginBottom="@dimen/name_bottom_margin"
+                        android:fontFamily="@font/medium"
+                        android:text="Pranav Sawant"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="AIChE Head"
+                        android:textAlignment="center"
+                        android:textColor="@color/offWhite"
+                        android:textSize="@dimen/post" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
